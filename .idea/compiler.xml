@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="code-with-quarkus" />
+        <module name="dtu-pay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="code-with-quarkus" target="11" />
+      <module name="dtu-pay" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

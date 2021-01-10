@@ -4,42 +4,29 @@ import simplepay.exceptions.CustomerInsufficientFundsException;
 import simplepay.exceptions.CustomerNotFoundException;
 import simplepay.exceptions.MerchantNotFoundException;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class SimpleDTUPay {
-    private Set<Merchant> merchants;
-    private Set<Customer> customers;
+    private List<Merchant> merchants;
+    private List<Customer> customers;
 
     public SimpleDTUPay() {
-        customers = new HashSet<>() {{
-            add(new Customer("cid1"));
+        customers = new ArrayList<Customer>() {{
+            add(new Customer("cid1", 100));
         }};
 
-        merchants = new HashSet<>() {{
-            add(new Merchant("mid1"));
+        merchants = new ArrayList<Merchant>() {{
+            add(new Merchant("mid1", 100));
         }};
     }
 
     public boolean pay(int amount, String cid, String mid) throws MerchantNotFoundException, CustomerNotFoundException,
             CustomerInsufficientFundsException {
         var merchant = getMerchant(mid);
-        String errorMessage;
-        if (merchant == null) {
-            errorMessage = String.format("Merchant with id=%s was not found", mid);
-            throw new MerchantNotFoundException(errorMessage);
-        }
         var customer = getCustomer(cid);
-        if (customer == null) {
-            errorMessage = String.format("Customer with id=%s was not found", cid);
-            throw new CustomerNotFoundException(errorMessage);
-        }
 
         if (customer.balance < amount) {
             return false;
-//            errorMessage = String.format("Customer with id=%s has insufficient funds to complete the transaction" +
-//                    " from merchant with id=%s", cid, mid);
-//            throw new CustomerInsufficientFundsException(errorMessage);
         }
 
         customer.balance -= amount;
@@ -56,25 +43,27 @@ public class SimpleDTUPay {
         merchants.add(merchant);
     }
 
-    public void removeCustomer(String id) {
-        var customer = customers.stream().filter(x -> x.id == id).findFirst().orElse(null);
-        if (customer != null) {
-            customers.remove(customer);
-        }
+    public void removeCustomer(String id) throws MerchantNotFoundException {
+        var customer = customers.stream().filter(x -> x.id == id).findFirst().orElseThrow(
+                () -> new MerchantNotFoundException(String.format("merchant with id %s is unknown\"\n", id)));
+        customers.remove(customer);
     }
 
-    public void removeMerchant(String id) {
-        var merchant = customers.stream().filter(x -> x.id == id).findFirst().orElse(null);
+    public void removeMerchant(String id) throws MerchantNotFoundException {
+        var merchant = customers.stream().filter(x -> x.id == id).findFirst().orElseThrow(
+                () -> new MerchantNotFoundException(String.format("merchant with id %s is unknown\"\n", id)));
         if (merchant != null) {
             customers.remove(merchant);
         }
     }
 
-    private Customer getCustomer(String id) {
-        return customers.stream().filter(x -> x.id == id).findFirst().orElse(null);
+    private Customer getCustomer(String id) throws CustomerNotFoundException {
+        return customers.stream().filter(x -> x.id.equals(id)).findFirst().orElseThrow(
+                () -> new CustomerNotFoundException(String.format("customer with id %s is unknown\n", id)));
     }
 
-    private Merchant getMerchant(String id) {
-        return merchants.stream().filter(x -> x.id == id).findFirst().orElse(null);
+    private Merchant getMerchant(String id) throws MerchantNotFoundException {
+        return merchants.stream().filter(x -> x.id.equals(id)).findFirst().orElseThrow(
+                () -> new MerchantNotFoundException(String.format("merchant with id %s is unknown\n", id)));
     }
 }
