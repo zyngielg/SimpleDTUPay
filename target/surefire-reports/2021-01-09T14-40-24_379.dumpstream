@@ -1,0 +1,48 @@
+# Created at 2021-01-09T14:40:24.917
+Jan 09, 2021 2:40:24 PM org.junit.platform.launcher.core.LauncherConfigurationParameters fromClasspathResource
+
+# Created at 2021-01-09T14:40:24.917
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2021-01-09T14:40:25.061
+Jan 09, 2021 2:40:25 PM org.junit.platform.launcher.core.LauncherConfigurationParameters fromClasspathResource
+
+# Created at 2021-01-09T14:40:25.061
+WARNING: Discovered 2 'junit-platform.properties' configuration files in the classpath; only the first will be used.
+
+# Created at 2021-01-09T14:40:25.687
+Jan 09, 2021 2:40:25 PM org.jboss.threads.Version <clinit>
+
+# Created at 2021-01-09T14:40:25.687
+INFO: JBoss Threads version 3.1.1.Final
+
+# Created at 2021-01-09T14:40:26.513
+Jan 09, 2021 2:40:26 PM org.jboss.threads.Version <clinit>
+
+# Created at 2021-01-09T14:40:26.514
+INFO: JBoss Threads version 3.1.1.Final
+
+# Created at 2021-01-09T14:40:26.693
+Jan 09, 2021 2:40:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+
+# Created at 2021-01-09T14:40:26.693
+INFO: Quarkus 1.10.5.Final on JVM started in 1.360s. Listening on: http://localhost:8081
+
+# Created at 2021-01-09T14:40:26.694
+Jan 09, 2021 2:40:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+
+# Created at 2021-01-09T14:40:26.694
+INFO: Profile test activated. 
+
+# Created at 2021-01-09T14:40:26.694
+Jan 09, 2021 2:40:26 PM io.quarkus.bootstrap.runner.Timing printStartupTime
+
+# Created at 2021-01-09T14:40:26.694
+INFO: Installed features: [cdi, resteasy, resteasy-jaxb, resteasy-jsonb]
+
+# Created at 2021-01-09T14:40:27.992
+Jan 09, 2021 2:40:27 PM io.quarkus.bootstrap.runner.Timing printStopTime
+
+# Created at 2021-01-09T14:40:27.993
+INFO: Quarkus stopped in 0.051s
+

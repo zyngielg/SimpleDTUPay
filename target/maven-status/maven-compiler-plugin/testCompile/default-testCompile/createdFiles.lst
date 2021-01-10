@@ -1,0 +1,4 @@
+org/acme/GreetingResourceTest.class
+calculator/ExampleSteps.class
+org/acme/NativeGreetingResourceIT.class
+calculator/CucumberTest.class
