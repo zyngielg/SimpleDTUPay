@@ -1,4 +1,5 @@
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/3_rest/first_rest_project/src/test/java/calculator/CucumberTest.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/3_rest/first_rest_project/src/test/java/calculator/ExampleSteps.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/3_rest/first_rest_project/src/test/java/org/acme/NativeGreetingResourceIT.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/3_rest/first_rest_project/src/test/java/org/acme/GreetingResourceTest.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/test/java/org/acme/NativeGreetingResourceIT.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/test/java/simplepay/SimpleDTUPayTest.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/test/java/calculator/CucumberTest.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/test/java/org/acme/GreetingResourceTest.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/test/java/calculator/ExampleSteps.java

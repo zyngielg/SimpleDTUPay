@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.acme.NativeGreetingResourceIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! - in org.acme.NativeGreetingResourceIT
+org.acme.NativeGreetingResourceIT  Time elapsed: 0.034 s  <<< ERROR!
+org.junit.platform.commons.JUnitException: Quarkus native image start failed, original cause: java.lang.RuntimeException: Unable to automatically find native image, please set the native.image.path to the native executable you wish to test
+Caused by: java.lang.RuntimeException: Unable to automatically find native image, please set the native.image.path to the native executable you wish to test
+

@@ -1,3 +1,6 @@
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/org/acme/GreetingResource.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/org/acme/CucumberTest.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/calculator/UpnCalculator.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/CustomerInsufficientFundsException.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/Merchant.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/SimpleDTUPay.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/Customer.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/MerchantNotFoundException.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/CustomerNotFoundException.java
