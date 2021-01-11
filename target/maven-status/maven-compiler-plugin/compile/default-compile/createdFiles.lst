@@ -1,5 +1,4 @@
 simplepay/exceptionHandlers/MerchantNotFoundExceptionHandler.class
-simplepay/services/PayService.class
 simplepay/exceptions/CustomerInsufficientFundsException.class
 simplepay/TransactionDb.class
 simplepay/model/Customer.class
@@ -7,5 +6,6 @@ simplepay/exceptions/CustomerNotFoundException.class
 simplepay/model/Merchant.class
 simplepay/exceptions/MerchantNotFoundException.class
 simplepay/exceptionHandlers/CustomerNotFoundExceptionHandler.class
+simplepay/services/DTUSimplePayService.class
 simplepay/model/Transaction.class
 simplepay/exceptionHandlers/CustomerInsufficientFundsExceptionHandler.class

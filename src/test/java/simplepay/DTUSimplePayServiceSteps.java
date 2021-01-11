@@ -9,15 +9,20 @@ import simplepay.exceptions.CustomerNotFoundException;
 import simplepay.exceptions.MerchantNotFoundException;
 import simplepay.model.Transaction;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class PayServiceSteps {
+public class DTUSimplePayServiceSteps {
+    DtuPay dtuPay;
+
     String cid, mid;
     String exceptionMessage;
     boolean successful;
 
-    DtuPay dtuPay;
-
+    List<Transaction> transactionList;
+    List<Transaction> retrievedTransactions;
 
     @Given("a customer with id {string}")
     public void aCustomerWithId(String cid) {
@@ -54,5 +59,4 @@ public class PayServiceSteps {
     public void anErrorMessageIsReturnedSaying(String message) {
         assertEquals(exceptionMessage, message);
     }
-
 }

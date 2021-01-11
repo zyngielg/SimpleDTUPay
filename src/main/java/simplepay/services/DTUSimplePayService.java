@@ -9,14 +9,16 @@ import simplepay.model.Transaction;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.util.List;
 
 
-@Path("/pay")
-public class PayService {
+@Path("/simple-dtu-pay")
+public class DTUSimplePayService {
     DtuPay dtuPay;
     TransactionDb db;
 
-    public PayService() {
+    public DTUSimplePayService() {
         dtuPay = new DtuPay();
         db = new TransactionDb();
     }
@@ -24,16 +26,19 @@ public class PayService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public boolean pay(Transaction transaction) throws CustomerInsufficientFundsException, MerchantNotFoundException, CustomerNotFoundException {
+    @Path("/pay")
+    public Response pay(Transaction transaction) throws CustomerInsufficientFundsException, MerchantNotFoundException, CustomerNotFoundException {
         var result = dtuPay.pay(transaction);
         if (result) {
             db.addTransaction(transaction);
         }
-        return result;
+        return Response.ok().entity(result).build();
     }
 
     @GET
-    public String hello() {
-        return "hello";
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/transaction-list")
+    public Response getTransactionList() {
+        return Response.ok().entity(db.getTransactionList()).build();
     }
 }

@@ -2,9 +2,9 @@ package simplepay.model;
 
 public class Merchant {
     public String id;
-    public double balance;
+    public int balance;
 
-    public Merchant(String id, double balance) {
+    public Merchant(String id, int balance) {
         this.id = id;
         this.balance = balance;
     }

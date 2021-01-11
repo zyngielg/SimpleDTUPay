@@ -3,11 +3,11 @@ package simplepay.model;
 public class Transaction {
     public String customerId;
     public String merchantId;
-    public double amount;
+    public int amount;
 
     public Transaction() {}
 
-    public Transaction(String customerId, String merchantId, double amount) {
+    public Transaction(String customerId, String merchantId, int amount) {
         this.customerId = customerId;
         this.merchantId = merchantId;
         this.amount = amount;

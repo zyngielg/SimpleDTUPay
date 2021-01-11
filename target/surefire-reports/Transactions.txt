@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: Transactions
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.037 s <<< FAILURE! - in Transactions
+Retrieving transaction list  Time elapsed: 0.037 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step "two transactions have been conducted beforehand" is undefined. You can implement it using the snippet(s) below:
+
+@Given("two transactions have been conducted beforehand")
+public void twoTransactionsHaveBeenConductedBeforehand() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

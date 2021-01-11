@@ -28,7 +28,8 @@ public class DtuPay {
         var amount = transaction.amount;
         var customer = getCustomer(transaction.customerId);
         if (customer.balance < amount) {
-            return false;
+            throw new CustomerInsufficientFundsException(String.format(
+                    "customer with id=%s has insufficient funds to pay %ddkk", transaction.customerId, amount));
         }
         var merchant = getMerchant(transaction.merchantId);
 
