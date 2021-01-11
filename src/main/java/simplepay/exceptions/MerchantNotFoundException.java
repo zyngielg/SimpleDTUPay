@@ -1,6 +1,8 @@
 package simplepay.exceptions;
 
-public class MerchantNotFoundException extends Exception {
+import java.io.Serializable;
+
+public class MerchantNotFoundException extends Exception implements Serializable {
     public MerchantNotFoundException(String errorMessage) {
         super(errorMessage);
     }

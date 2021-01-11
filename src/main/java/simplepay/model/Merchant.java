@@ -1,4 +1,4 @@
-package simplepay;
+package simplepay.model;
 
 public class Merchant {
     public String id;

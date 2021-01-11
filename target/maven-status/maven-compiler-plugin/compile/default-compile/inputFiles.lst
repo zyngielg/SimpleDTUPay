@@ -1,6 +1,12 @@
 /home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/CustomerInsufficientFundsException.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/Merchant.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/SimpleDTUPay.java
-/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/Customer.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/model/Transaction.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/services/PayService.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/model/Merchant.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptionHandlers/MerchantNotFoundExceptionHandler.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptionHandlers/CustomerInsufficientFundsExceptionHandler.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/model/Customer.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptionHandlers/CustomerNotFoundExceptionHandler.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/DtuPay.java
+/home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/TransactionDb.java
 /home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/MerchantNotFoundException.java
 /home/gustaw/Documents/dtu/t3/software_development_of_web_services/tasks/SimpleDTUPay/src/main/java/simplepay/exceptions/CustomerNotFoundException.java
